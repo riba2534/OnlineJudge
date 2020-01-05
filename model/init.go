@@ -17,6 +17,7 @@ var DB *gorm.DB
 // Database 在中间件中初始化mysql链接
 func Database(connString string) {
 	db, err := gorm.Open("mysql", connString)
+	db = db.Set("gorm:table_options", "ENGINE=InnoDB CHARSET=utf8 auto_increment=1") // 解决中文字符集问题
 	db.LogMode(true)
 	// Error
 	if err != nil {
