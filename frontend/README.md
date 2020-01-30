@@ -1,21 +1,22 @@
-# frontend
+# OnlineJudge的前端
 
-## Project setup
+
+## 使用方法
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 调试
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 格式化
 ```
 npm run lint
 ```
