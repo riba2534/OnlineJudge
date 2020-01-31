@@ -1,6 +1,5 @@
 <template>
   <el-card>
-    <br />
     <h1>{{ msg }}</h1>
   </el-card>
 </template>
@@ -10,7 +9,7 @@ export default {
   name: "main",
   data() {
     return {
-      msg: "欢迎来到NYOJ"
+      msg: "欢迎来到OnlineJudge"
     };
   }
 };
