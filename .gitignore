@@ -1,6 +1,7 @@
 OnlineJudgeBackend
 
 .DS_Store
+.*.icloud
 node_modules
 /dist
 
