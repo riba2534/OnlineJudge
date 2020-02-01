@@ -217,9 +217,9 @@ export default {
       this.name = sessionStorage.name;
     },
     // 选择tab触发的事件
-    // handleSelect(key, keyPath) {
-    //   console.log(key, keyPath);
-    // },
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    },
     handleCommand(command) {
       if (command == "logout") {
         this.$axios
@@ -369,7 +369,7 @@ export default {
             });
         })
         .catch(error => {
-          this.$message.error("用户名不存在（" + error + "）");
+          this.$message.error("内部错误：" + error);
         });
     }
   }
