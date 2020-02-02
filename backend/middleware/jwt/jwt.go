@@ -9,6 +9,7 @@ import (
 	"github.com/riba2534/OnlineJudge/backend/pkg/util"
 )
 
+// gin的JWT中间件
 func JWT() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var code int

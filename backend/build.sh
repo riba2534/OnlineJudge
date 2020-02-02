@@ -1,5 +1,5 @@
 #!/bin/sh
 
-go build -o OnlineJudgeBackend
+goimports -w ../backend
 
-./OnlineJudgeBackend
+go build -o OnlineJudgeBackend && ./OnlineJudgeBackend

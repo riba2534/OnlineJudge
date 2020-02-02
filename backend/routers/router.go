@@ -11,8 +11,16 @@ func InitRouter() *gin.Engine {
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
 
-	r.GET("/auth", api.GetAuth)
-	apiv1 := r.Group("/api/v1")
+	// config := cors.DefaultConfig()
+	// config.AllowOrigins = []string{"http://127.0.0.1:8080"}
+	// config.AllowCredentials = true
+	// r.Use(cors.New(config))
+
+	apiv1 := r.Group("/api")
+
+	apiv1.POST("/userdata", api.UserData)
+	apiv1.POST("/register", api.Register)
+	apiv1.POST("/login", api.Login)
 	// 中间件用来校验接口
 	apiv1.Use(jwt.JWT())
 	{

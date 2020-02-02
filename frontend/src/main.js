@@ -13,8 +13,8 @@ Vue.config.productionTip = false
 Vue.use(VueResource)
 Vue.prototype.$md5 = md5;
 
-Vue.prototype.$ip = "localhost";
-Vue.prototype.$port = "8000";
+Vue.prototype.$ip = "127.0.0.1";
+Vue.prototype.$port = "8000/api";
 
 
 //开启debug模式
